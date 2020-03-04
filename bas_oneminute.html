@@ -68,17 +68,14 @@
         // Find all DOM containers, and render Like buttons into them.
         document.querySelectorAll('.like_button_container')
             .forEach(domContainer => {
-                console.log(domContainer);
-                domContainer.classList.add("mystyle");
-
                 // Read the comment ID from a data-* attribute.
-                // const commentID = parseInt(domContainer.dataset.commentid, 10);
-                // ReactDOM.render(
-                //     e(LikeButton, {
-                //         commentID: commentID
-                //     }),
-                //     domContainer
-                // );
+                const commentID = parseInt(domContainer.dataset.commentid, 10);
+                ReactDOM.render(
+                    e(LikeButton, {
+                        commentID: commentID
+                    }),
+                    domContainer
+                );
             });
     </script>
 
