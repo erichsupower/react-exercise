@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSX Preprocessor</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <!-- 載入 React -->
+    <!-- 注意：在發佈應用程式前，請把「development.js」替換成「production.min.js」。 -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- 在 Javascript 中使用 JSX -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- 載入 User's component。-->
+    <script type="text/babel">
+        'use strict';
+
+        const name = 'Josh Perez';
+        const element = <h1>Hello, {name}</h1>;
+
+        ReactDOM.render(
+            element,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>
