@@ -20,6 +20,7 @@
     - [範例一：相當於 DOM 標籤的 React element：](#%e7%af%84%e4%be%8b%e4%b8%80%e7%9b%b8%e7%95%b6%e6%96%bc-dom-%e6%a8%99%e7%b1%a4%e7%9a%84-react-element)
   - [使用者自定義的 component](#%e4%bd%bf%e7%94%a8%e8%80%85%e8%87%aa%e5%ae%9a%e7%be%a9%e7%9a%84-component)
   - [組合 Component](#%e7%b5%84%e5%90%88-component)
+  - [抽離 Component](#%e6%8a%bd%e9%9b%a2-component)
 
 
 ---
@@ -186,3 +187,9 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+---
+
+## 抽離 Component
+
+![Extracting_Components.png](images/Extracting_Components.png)
