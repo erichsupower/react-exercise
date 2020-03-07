@@ -17,6 +17,9 @@
       - [方法一：Function Component](#%e6%96%b9%e6%b3%95%e4%b8%80function-component)
       - [方法二：Class Component](#%e6%96%b9%e6%b3%95%e4%ba%8cclass-component)
   - [Render 一個 Component](#render-%e4%b8%80%e5%80%8b-component)
+    - [範例一：相當於 DOM 標籤的 React element：](#%e7%af%84%e4%be%8b%e4%b8%80%e7%9b%b8%e7%95%b6%e6%96%bc-dom-%e6%a8%99%e7%b1%a4%e7%9a%84-react-element)
+  - [使用者自定義的 component](#%e4%bd%bf%e7%94%a8%e8%80%85%e8%87%aa%e5%ae%9a%e7%be%a9%e7%9a%84-component)
+  - [組合 Component](#%e7%b5%84%e5%90%88-component)
 
 
 ---
@@ -132,3 +135,54 @@ class Welcome extends React.Component {
 ---
 
 ## Render 一個 Component
+
+### 範例一：相當於 DOM 標籤的 React element：
+
+```js
+const element = <div />;
+```
+
+## 使用者自定義的 component
+
+```js
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+const element = <Welcome name="Sara" />;
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+```
+- 我們對 `<Welcome name="Sara" />` 這個 `element 呼叫了 ReactDOM.render()`。
+- React 以 `{name: 'Sara'}` 作為 props 傳入 `Welcome` component 並呼叫。
+- `Welcome` component 回傳了 `\<h1>Hello, Sara</h1>` 這個 element 作為返回值。
+- React DOM 有效的將 DOM 更新為 `\<h1>Hello, Sara</h1>`。
+
+> 注意： Component 的字首須為大寫字母
+
+## 組合 Component
+
+Component 可以在輸出中引用其他 component。通常來說，每個 React 應用程式都有一個最高層級的 `App` component。
+
+```js
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
+```
