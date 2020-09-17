@@ -4,23 +4,19 @@
 
 ---
 
-- [React 學習](#react-%e5%ad%b8%e7%bf%92)
-  - [使用 React - CDN](#%e4%bd%bf%e7%94%a8-react---cdn)
-  - [使用 JSX](#%e4%bd%bf%e7%94%a8-jsx)
-    - [方法一：使用 CDN](#%e6%96%b9%e6%b3%95%e4%b8%80%e4%bd%bf%e7%94%a8-cdn)
-    - [方法二：使用 JSX Preprocessor](#%e6%96%b9%e6%b3%95%e4%ba%8c%e4%bd%bf%e7%94%a8-jsx-preprocessor)
-  - [受歡迎的 React toolchain](#%e5%8f%97%e6%ad%a1%e8%bf%8e%e7%9a%84-react-toolchain)
-  - [React Developer Tools](#react-developer-tools)
-  - [Element](#element)
-  - [Components 與 Props](#components-%e8%88%87-props)
-    - [定義 component 的方法](#%e5%ae%9a%e7%be%a9-component-%e7%9a%84%e6%96%b9%e6%b3%95)
-      - [方法一：Function Component](#%e6%96%b9%e6%b3%95%e4%b8%80function-component)
-      - [方法二：Class Component](#%e6%96%b9%e6%b3%95%e4%ba%8cclass-component)
-  - [Render 一個 Component](#render-%e4%b8%80%e5%80%8b-component)
-    - [範例一：相當於 DOM 標籤的 React element：](#%e7%af%84%e4%be%8b%e4%b8%80%e7%9b%b8%e7%95%b6%e6%96%bc-dom-%e6%a8%99%e7%b1%a4%e7%9a%84-react-element)
-  - [使用者自定義的 component](#%e4%bd%bf%e7%94%a8%e8%80%85%e8%87%aa%e5%ae%9a%e7%be%a9%e7%9a%84-component)
-  - [組合 Component](#%e7%b5%84%e5%90%88-component)
-  - [抽離 Component](#%e6%8a%bd%e9%9b%a2-component)
+- [React 學習](#react-學習)
+  - [使用 React - CDN](#使用-react---cdn)
+  - [使用 JSX](#使用-jsx)
+    - [方法一：使用 CDN](#方法一使用-cdn)
+  - [Components 與 Props](#components-與-props)
+    - [定義 component 的方法](#定義-component-的方法)
+      - [方法一：Function Component](#方法一function-component)
+      - [方法二：Class Component](#方法二class-component)
+  - [Render 一個 Component](#render-一個-component)
+    - [範例一：相當於 DOM 標籤的 React element：](#範例一相當於-dom-標籤的-react-element)
+  - [使用者自定義的 component](#使用者自定義的-component)
+  - [組合 Component](#組合-component)
+  - [抽離 Component](#抽離-component)
 
 
 ---
@@ -85,7 +81,7 @@ JSX 使用介紹請參考：[JSX 介紹](jsx.md)
 
 [[ 傳送門 ↗ ]](https://reactjs.org/blog/2015/09/02/new-react-developer-tools.html#installation)
 
-![image](https://reactjs.org/devtools-full-f57ae67cfaa1fe76880654e2eddbf71f.gif)
+![image](https://reactjs.org/f57ae67cfaa1fe76880654e2eddbf71f/devtools-full.gif)
 
 ---
 
